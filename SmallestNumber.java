@@ -2,7 +2,7 @@ package smallestNumberRec;
 
 public class SmallestNumber {
     public static void main(String[] args) {
-        int[] arr = {5,0,1,53,25,7,58,26,13};
+        int[] arr = {5, 0, 1, 53, 25, 7, 58, 26, 13};
         SmallestNumber smallNum = new SmallestNumber();
         int min = smallNum.find(arr, 4, 0);
         System.out.println(min);

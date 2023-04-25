@@ -1,24 +1,22 @@
-public class KthSmallestNumber {
+public class KthSmallestNumber1 {
     public static void main(String[] args) {
         int[] arr = {5, 0, 1, 53, 25, 7, 58, 26, 13};
-        SmallestNumber smallNum = new SmallestNumber();
-        int min = smallNum.find(arr, 4);
-        System.out.println(min);
-
+        int min1 =find(arr, 4);
+        System.out.print("The result of first way: ");
+        System.out.println(min1);
     }
-
 
     /** The function copies an array, and pass 0 to function finder,
      * and call it */
-    public int find(int[] arr, int k){
+    public static int find(int[] arr, int k){
         int[] newArr = new int[arr.length];
         System.arraycopy(arr, 0, newArr, 0, arr.length);
         return finder(newArr, k, 0);
     }
 
-    /** The function find k-th smallest number in an array
+    /** The function find the k-th smallest number in an array
      startIndex in first time must be 0 */
-    private int finder(int[] arr, int k, int startIndex) {
+    private static int finder(int[] arr, int k, int startIndex) {
 
         if (k < 1) {
             return -1;
@@ -48,3 +46,4 @@ public class KthSmallestNumber {
         }
 
     }
+}

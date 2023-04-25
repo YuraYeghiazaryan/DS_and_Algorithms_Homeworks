@@ -9,6 +9,9 @@ public class BinarySearch {
 
     }
     public int search(int target, int[] arr, int leftIndex, int rightIndex){
+        if (leftIndex > rightIndex){
+            return -1;
+        }
         int mid = (leftIndex + rightIndex) / 2;
         if (arr[mid] == target){
             return mid;
